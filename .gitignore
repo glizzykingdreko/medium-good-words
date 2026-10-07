@@ -1,0 +1,22 @@
+# OS / Python
+.DS_Store
+__pycache__/
+
+# Solver download cache
+solver/.cache/
+
+# Build output
+*.zip
+
+# Chrome Web Store submission material
+store/
+
+# Cover sources and the unused plain cover
+assets/*.html
+assets/cover.png
+
+# Research material: captures, references, screenshots
+*.har
+rules.txt
+dover.png
+Screenshot*.png

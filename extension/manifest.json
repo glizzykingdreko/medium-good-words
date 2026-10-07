@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Good Words Solver by TakionAPI",
+  "short_name": "Good Words Solver",
+  "version": "1.0.0",
+  "description": "Lists every word on Medium's Good Words board and plays them for you in one click. Built by TakionAPI.",
+  "homepage_url": "https://takionapi.tech/?utm_source=good-words-extension&utm_medium=extension&utm_campaign=good-words-extension&utm_content=manifest-homepage",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://medium.com/*"
+      ],
+      "js": [
+        "solver.js",
+        "game.js",
+        "panel.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
